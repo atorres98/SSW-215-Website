@@ -1,0 +1,43 @@
+
+/*Make first header purple*/
+h1{
+	color:#4C52D1
+}
+/* style image*/
+img{
+	height: 30%;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+
+/*Make background a light color and top border white*/
+#special{
+	background-color: #CEF6EC;
+	border-right-style: dotted;
+	border-right-color: #EED1F4;
+	border-right-width: 70px;
+	border-top-style: dashed;
+	border-top-color: white;
+	border-top-width: 90px;
+
+}
+/* fix properties of table*/
+table{
+margin-left: 30%;
+margin-right: 30%;
+column-gap: 90px;
+}
+#credits{
+margin-left: 40%;
+}
+
+#heh{
+	font-size: 130%;
+}
+
+#friend{
+	color:#7401DF;
+	font-size:150%;
+}
