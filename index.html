@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head>
+<link rel="stylesheet" 
+	style = "text/css"
+	href= "cssstylesheet.css"/>
+
+<title> Angelica's Webpage </title>
+</head>
+<!-- list of classes in alphabetical order -->
+<body id="special"><h1> <strong>Angelica's <em>Fourth</em> Semester </strong> </h1>
+<img src="motivation.PNG">
+<!-- list of classes being taken 4th semester-->
+<h2> Angelica's Spring 2018 Classes:</h2>
+	<ol> <li>Discrete Mathematics</li> <li>Engineering Design IV</li> <li>Engineering Design V</li> <li>Individual Software Engineering</li> 
+		<li>Materials Processing</li> <li>Probability and Statistics for Engineers</li> <li>Thermodynamics</li>
+	</ol>
+<!-- insert click function-->
+<p id="try">
+	Click for a surprise!<input type="button" onclick="Function()" value="Click"> 
+	</p>
+
+<!-- table of when and where the classes occur and the amount of credits -->
+<table class="Cable">
+	<th> <span id="friend"><strong>Class Schedule</strong></span></th>
+		<tr id="heh"><td><strong>Course</strong></td> <td><strong>Locations and Times</strong></td> 
+			<td><strong>Credits</strong></td></tr> 
+		<tr><td>Discrete Mathematics MA-134</td> <td> MF: <time>11-11:50AM E330; W: 11-11:50AM BC104</td> <td>3.00</td></tr>
+		<tr><td>Engineering Design 4 E-232</td> <td> F: 1-2:40PM B118; <sup>Lab</sup>F: 3-5:50PM B126</td> <td>3.00</td></tr>
+		<tr><td>Engineering Design 5 E-321</td> <td> R: 10-11:50AM B314</td> <td>2.00</td></tr>
+		<tr><td>Individual Software Engineering SSW-215</td> <td>T: 9-10:40AM; R: 9-9:50AM BC204</td> <td>3.00</td></tr>
+		<tr><td>Materials Processing E-344</td> <td>T: 2-2:50PM; R: 2-3:40PM BC122</td> <td>3.00</td></tr>
+		<tr><td>Probability and Statistics for Engineers E243</td> <td>MT: 12-12:50PM E222; <sup>Rec</sup>F: 10-10:50PM X104</td> <td>3.00</td></tr>
+		<tr><td>Thermodynamics E234</td> <td>M: 9-9:50PM; R: 5-5:50PM K228; <sup>Rec</sup>T: 3-3:50PM BC310</td> <td>3.00</td></tr>
+</table>
+<p id="credits">To see total amount of credits: <input type="button" onclick="alert('Credits Being Taken: 20')" value="Click"> </p>
+
+<h3 class="huh">Log into <a href="https://my.stevens.edu/">MyStevens</a> Account</h3>
+	<p>Log in to access Canvas and the Student/Faculty Web Self Services to see your classes</p>
+<h3>You can create your own tentative <a href="http://sitscheduler.com/">schedule</a>, too!</h3>
+
+<!-- using JavaScript to enhance webpage-->
+<script type="text/JavaScript">
+var body= document.querySelector("body");
+body.style.background="#E0F8F7"
+<!-- when user clicks button, alert pops up-->
+function Function(){
+document.getElementById("try");
+return alert('Good luck this semester!');
+}
+<!-- change table border to be dotted and blue-->
+document.getElementsByClassName("Cable")[0].style.border="dotted blue";
+
+document.getElementsByTagName("ol")[0].style.color="green";
+
+document.querySelectorAll(".huh")[0].style.color="#CC2EFA";
+</script>
+
+</body>
+<!--extra elements: superscript (<sup></sup>), anchor (<a></a>), input button (<input type="button")-->
+
+</html>
+
+
